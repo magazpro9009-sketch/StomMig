@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 410" fill="none">
+  <defs>
+    <linearGradient id="plate" x1="107" y1="250" x2="495" y2="355" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f6fcfd"/><stop offset="1" stop-color="#b4dce6"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="-44" y1="-48" x2="47" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8feff"/><stop offset=".45" stop-color="#deeff4"/><stop offset="1" stop-color="#a9d2df"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="-45" y1="-52" x2="45" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/><stop offset=".45" stop-color="#d1e9ef"/><stop offset="1" stop-color="#84b9ca"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#fbfeff" stop-opacity=".9"/><stop offset="1" stop-color="#ecf9fd" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-70%" width="210%" height="260%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+    <filter id="tileShadow" x="-70%" y="-60%" width="240%" height="250%">
+      <feDropShadow dx="1" dy="9" stdDeviation="7" flood-color="#397887" flood-opacity=".22"/>
+    </filter>
+    <g id="unit">
+      <path d="M-48 1-26-39q3-6 10-6h33q6 0 9 6L48 1q3 5 0 11L26 51q-3 6-10 6h-32q-7 0-10-6l-22-39q-3-6 0-11Z" fill="#84b7c7" fill-opacity=".65"/>
+      <path d="M-48-6-26-46q3-6 10-6h33q6 0 9 6L48-6q3 5 0 11L26 44q-3 6-10 6h-32q-7 0-10-6L-48 5q-3-6 0-11Z" fill="url(#tile)" stroke="url(#edge)" stroke-width="2"/>
+      <path d="M-37-4-20-36q2-4 7-4h26q5 0 7 4L37-4q2 4 0 8L20 35q-2 4-7 4h-26q-5 0-7-4L-37 4q-2-4 0-8Z" stroke="#73aebf" stroke-opacity=".74" stroke-width="1.4"/>
+      <path d="m-20-34 18 32-17 34m17-34h38m-44-12h17l8 14-8 14H-8l-8-14 8-14Z" stroke="#73aebf" stroke-opacity=".74" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </defs>
+  <ellipse cx="338" cy="190" rx="255" ry="197" fill="url(#glow)"/>
+  <g transform="translate(44 -2)">
+  <circle cx="302" cy="193" r="157" stroke="#afd5df" stroke-dasharray="2 6"/>
+  <circle cx="302" cy="193" r="133" stroke="#c2dfe8"/>
+  <path d="M110 193h384M302 27v333" stroke="#bddce4" stroke-dasharray="3 8"/>
+  <circle cx="302" cy="36" r="4" fill="#81b4c5"/>
+  <circle cx="459" cy="193" r="5" fill="#e7f7fc" stroke="#83b7c9"/>
+  <circle cx="145" cy="193" r="3" fill="#88becc"/>
+  <path d="M460 87v20m-10-10h20M134 108v12m-6-6h12M493 248v16m-8-8h16" stroke="#80b6c7" stroke-width="1.4" stroke-linecap="round"/>
+  <ellipse cx="302" cy="348" rx="166" ry="30" fill="#6999a8" opacity=".24" filter="url(#shadow)"/>
+  <path d="M151 301v15c0 24 70 43 151 43s151-19 151-43v-15H151Z" fill="#a9cfdb" stroke="#9cc4d1"/>
+  <ellipse cx="302" cy="301" rx="151" ry="42" fill="url(#plate)" stroke="#f1fbff" stroke-width="2"/>
+  <ellipse cx="302" cy="301" rx="134" ry="31" stroke="#b6d7e1"/>
+  <ellipse cx="302" cy="293" rx="106" ry="14" fill="#729aa5" opacity=".28" filter="url(#shadow)"/>
+  <g filter="url(#tileShadow)">
+    <use href="#unit" transform="translate(217 239)"/>
+    <use href="#unit" transform="translate(302 239)"/>
+    <use href="#unit" transform="translate(387 239)"/>
+    <use href="#unit" transform="translate(260 165)"/>
+    <use href="#unit" transform="translate(344 165)"/>
+    <use href="#unit" transform="translate(302 91)"/>
+  </g>
+  </g>
+</svg>
